@@ -1,0 +1,129 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+
+.footer{
+	background-color: #333;
+}
+
+.center{
+	text-align: center;
+}
+
+a, a:hover, a:active, a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+li{
+		padding: 3% 3%;
+		display: inline-block;
+
+}
+
+ul{
+	padding:0 6%;
+}
+
+.green{
+	background-color: #6D9;
+}
+
+#copy{
+	font-size: 11px;
+	color: #ddd;
+	padding: 2%;
+}
+
+.white-text{
+	color: #fff;
+}
+
+.padd{
+	padding: 5% 10%;
+	margin: 0;
+}
+
+.btn{
+	border: solid #fff 1px;
+	background: transparent;
+	color: #fff;
+	outline:none;
+	margin-bottom: 4%;
+}
+
+		.btn:hover, .btn:focus, .btn:active{								/* не убирается желтая рамка */
+			outline:none !important;
+			color: #fff;
+		}
+
+#form{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 999;
+	top: 0;
+	position: fixed;
+	display: none;
+}
+
+		.form{
+			margin: 1%;
+			width: 400px;
+			background-color: rgba(0,0,0,0);
+			padding: 1%;
+			border-right: none;
+			border-left: none;
+			border-top: none;
+			border-color: #fff;
+			border-width: 1px;
+			color: #fff;
+			outline:none;
+			resize: none;
+		}
+
+		#submit-button{
+			padding: 1%;
+			border: none;
+			background-color: rgb(136, 183, 179);
+		}
+
+				#submit-button:hover{
+					background-color: rgb(104, 164, 159);
+				}
+
+#cross{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+		.close-img{
+			width: 80%;
+		}
+
+		#cross:hover{
+			cursor: pointer;
+		}
+
+
+h2{
+	font-weight: 100;
+}
+
+.s-text{
+	font-size: 90%;
+}
+
+.section-4{
+	padding-top: 4%;
+	padding-bottom: 3%;
+}
+
+.text-box{
+padding-right: 10%;
+}
+
+.phone-up{
+	bottom: -150px;
+}
