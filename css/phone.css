@@ -1,3 +1,8 @@
+@media screen and (max-width: 400px){
+  p{
+    font-size: 55%;
+  }
+}
 
 @media screen and (max-width: 580px){
   .form{
@@ -14,7 +19,59 @@
 }
 
   h2, h3{
-    font-size: 125%;
+    font-size: 115%;
   }
+
+  p{
+    font-size: 75%;
+  }
+
+  .phone-right{
+    margin-bottom: -75px;
+  }
+
+  .video{
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .text-box{
+    padding-right: 10%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 900px){
+  p{
+    font-size: 90%;
+  }
+
+  h5{
+    font-size: 95%;
+  }
+
+  h3{
+    font-size: 135%;
+  }
+
+  .phones-3, .phone-slide{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 901px){
+  p{
+    font-size: 115%;
+  }
+
+  h5{
+    font-size: 110%;
+  }
+
+  h3{
+    font-size: 160%;
+  }
+
 
 }

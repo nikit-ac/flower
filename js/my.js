@@ -24,11 +24,44 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if (scroll > 25)
+    if (scroll > 25){
       $('.phone-up').animate({bottom: 0}, 400)
+      $('.phone-up, img').animate({opacity: 1}, 400)
+    }
+
+
     // ====================================================СЮДА БУДУ ВСТАВЛЯТЬ ПОДСВЕТКУ МЕНЮ
   });
 
+  $('#slider').owlCarousel({
+    navigation: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    singleItem: true,
+    navigationText: false
+  })
+
+  $('#nav-0').click(function(){
+    $('#nav-1').css('opacity','0.5')
+    $('#nav-0').css('opacity','1')
+    $('#slide-1').animate({opacity: 0},600)
+    $('#slide-0').css('opacity','0');
+    $('#slider').trigger('owl.jumpTo', 0)
+    $('#slide-0').animate({opacity: 1},600)
+    $('#slide-1').css('opacity','1');
+
+  });
+
+  $('#nav-1').click(function(){
+    $('#nav-0').css('opacity','0.5')
+    $('#nav-1').css('opacity','1')
+    $('#slide-0').animate({opacity: 0},600)
+    $('#slide-1').css('opacity','0');
+    $('#slider').trigger('owl.jumpTo', 1)
+    $('#slide-1').animate({opacity: 1},600)
+    $('#slide-0').css('opacity','1');
+
+  });
 
 
 })
